@@ -1,0 +1,620 @@
+all Flow for IMSI 'imsi-208930100007500':
+                                                                          message
+                                   connected to gNodeB, Name:gnb1, IP:, Port:9487
+                                                             SIM UE Init complete
+                                        execute procedure  REGISTRATION-PROCEDURE
+                               Waiting for procedure result from imsiStateMachine
+                                                 handling event: PROC-START-EVENT
+                                      Start new procedure  REGISTRATION-PROCEDURE
+                                                initiating Registration Procedure
+                                             Handling: REGISTRATION-REQUEST-EVENT
+                                       handling event: REGISTRATION-REQUEST-EVENT
+                                    handling event: AUTHENTICATION-RESPONSE-EVENT
+                                          Handling: AUTHENTICATION-RESPONSE-EVENT
+                                        next event: AUTHENTICATION-RESPONSE-EVENT
+                                           handling event: DL-INFO-TRANSFER-EVENT
+                                                        Received Message Type: 86
+                                                 Handling: DL-INFO-TRANSFER-EVENT
+                                     handling event: AUTHENTICATION-REQUEST-EVENT
+                                      handling event: SECURITY-MODE-COMMAND-EVENT
+                                     handling event: SECURITY-MODE-COMPLETE-EVENT
+                                           Handling: SECURITY-MODE-COMPLETE-EVENT
+                                                        Received Message Type: 93
+                              NAS integrity key: fc4551dd353d7df5d6d1a9a441faf1b9
+                                   calculate NAS MAC (algorithm: 2, DLCount: 0x0)
+                                                 Handling: DL-INFO-TRANSFER-EVENT
+                                           handling event: DL-INFO-TRANSFER-EVENT
+                                                           cmac value: 0x6c0f52f8
+                                                           cmac value: 0xad2abf90
+                                           handling event: DL-INFO-TRANSFER-EVENT
+                                                 Handling: DL-INFO-TRANSFER-EVENT
+                                   calculate NAS MAC (algorithm: 2, DLCount: 0x1)
+                              NAS integrity key: fc4551dd353d7df5d6d1a9a441faf1b9
+                               Procedure Result: PASS, imsi: imsi-208930100007500
+procedure: REGISTRATION-PROCEDURE, status: PROC-PASS-EVENT, E2E latency [ms]: 870
+                                                imsiStateMachine received result 
+                                         imsiStateMachine no more proc to execute
+                                            Handling: REGISTRATION-COMPLETE-EVENT
+                                        handling event: REGISTRATION-ACCEPT-EVENT
+                                                        Received Message Type: 66
+                                      handling event: REGISTRATION-COMPLETE-EVENT
+                                                           imsiStateMachine ended
+
+Total Latency: 0 days 00:00:00.871000 (0.871 seconds)
+PDF saved: call_flow-imsi-208930100007500.pdf
+
+Call Flow for IMSI 'imsi-208930100007560':
+                                                                                          message
+                                                   connected to gNodeB, Name:gnb1, IP:, Port:9487
+                                                                             SIM UE Init complete
+                                                        execute procedure  REGISTRATION-PROCEDURE
+                                               Waiting for procedure result from imsiStateMachine
+                                                                 handling event: PROC-START-EVENT
+                                                      Start new procedure  REGISTRATION-PROCEDURE
+                                                                initiating Registration Procedure
+                                                             Handling: REGISTRATION-REQUEST-EVENT
+                                                       handling event: REGISTRATION-REQUEST-EVENT
+                                                    handling event: AUTHENTICATION-RESPONSE-EVENT
+                                                          Handling: AUTHENTICATION-RESPONSE-EVENT
+                                                        next event: AUTHENTICATION-RESPONSE-EVENT
+                                                     handling event: AUTHENTICATION-REQUEST-EVENT
+                                                                        Received Message Type: 86
+                                                                 Handling: DL-INFO-TRANSFER-EVENT
+                                                           handling event: DL-INFO-TRANSFER-EVENT
+                                                           handling event: DL-INFO-TRANSFER-EVENT
+                                                                 Handling: DL-INFO-TRANSFER-EVENT
+                                                   calculate NAS MAC (algorithm: 2, DLCount: 0x0)
+                                              NAS integrity key: 0ac067115b577692d73a6e0877ba9e9a
+                                                                           cmac value: 0xd04268ab
+                                                                        Received Message Type: 93
+                                                      handling event: SECURITY-MODE-COMMAND-EVENT
+                                                           Handling: SECURITY-MODE-COMPLETE-EVENT
+                                                     handling event: SECURITY-MODE-COMPLETE-EVENT
+                                                                 Handling: DL-INFO-TRANSFER-EVENT
+                                                           handling event: DL-INFO-TRANSFER-EVENT
+                                                   calculate NAS MAC (algorithm: 2, DLCount: 0x1)
+                                          handling event: PDU-SESSION-ESTABLISHMENT-REQUEST-EVENT
+                                                Handling: PDU-SESSION-ESTABLISHMENT-REQUEST-EVENT
+                                      initiating UE Requested PDU Session Establishment Procedure
+                                         Start new procedure  PDU-SESSION-ESTABLISHMENT-PROCEDURE
+                                                                 handling event: PROC-START-EVENT
+                                           execute procedure  PDU-SESSION-ESTABLISHMENT-PROCEDURE
+                                               Procedure Result: PASS, imsi: imsi-208930100007560
+                                               Waiting for procedure result from imsiStateMachine
+                                                                imsiStateMachine received result 
+                                                      handling event: REGISTRATION-COMPLETE-EVENT
+                                                            Handling: REGISTRATION-COMPLETE-EVENT
+                                                        handling event: REGISTRATION-ACCEPT-EVENT
+                                                                        Received Message Type: 66
+                                                                           cmac value: 0xbef399fd
+                                              NAS integrity key: 0ac067115b577692d73a6e0877ba9e9a
+                procedure: REGISTRATION-PROCEDURE, status: PROC-PASS-EVENT, E2E latency [ms]: 346
+                                                 Handling: PDU-SESSION-ESTABLISHMENT-ACCEPT-EVENT
+                                                                         PDU Address: 172.250.0.1
+                                                                                      SSC Mode: 1
+                                                                           PDU Session Type: IPV4
+                                                                               PDU Session ID: 10
+                                                       adding new PDU Session for PDU Sess ID: 10
+                                               next event: PDU-SESSION-ESTABLISHMENT-ACCEPT-EVENT
+                                                                 Handling: DL-INFO-TRANSFER-EVENT
+                                                                        Payload contaner type:{1}
+                                                                       Received Message Type: 104
+                                                                           cmac value: 0x66c2e89b
+                                              NAS integrity key: 0ac067115b577692d73a6e0877ba9e9a
+                                                   calculate NAS MAC (algorithm: 2, DLCount: 0x2)
+                                                           handling event: DL-INFO-TRANSFER-EVENT
+                                           handling event: PDU-SESSION-ESTABLISHMENT-ACCEPT-EVENT
+                                        Please wait, initiating uplink user data in 3 seconds ...
+                                       Start new procedure  USER-DATA-PACKET-GENERATION-PROCEDURE
+                                                                 handling event: PROC-START-EVENT
+                                               Waiting for procedure result from imsiStateMachine
+                                                                             Handling: INIT-EVENT
+                                         execute procedure  USER-DATA-PACKET-GENERATION-PROCEDURE
+                                                 initiating User Data Packet Generation Procedure
+  procedure: PDU-SESSION-ESTABLISHMENT-PROCEDURE, status: PROC-PASS-EVENT, E2E latency [ms]: 1260
+                                                                imsiStateMachine received result 
+                                                 handling event: DATA-BEARER-SETUP-RESPONSE-EVENT
+                                                           fetching PDU Session for pduSessId: 10
+                                                        Handling: DATA-BEARER-SETUP-REQUEST-EVENT
+                                                  handling event: DATA-BEARER-SETUP-REQUEST-EVENT
+                                               Procedure Result: PASS, imsi: imsi-208930100007560
+                                                   Handling: DATA-PACKET-GENERATION-REQUEST-EVENT
+                                                   Handling: DATA-PACKET-GENERATION-REQUEST-EVENT
+                                               received QFI value in downlink user data packet: 1
+                                                        received ICMP Echo Reply, ID:12394, Seq:2
+                                               received QFI value in downlink user data packet: 1
+                                                        received ICMP Echo Reply, ID:12394, Seq:1
+                                                         imsiStateMachine no more proc to execute
+                                               received QFI value in downlink user data packet: 1
+                                                        received ICMP Echo Reply, ID:12394, Seq:3
+                                               received QFI value in downlink user data packet: 1
+                                                        received ICMP Echo Reply, ID:12394, Seq:4
+                                               received QFI value in downlink user data packet: 1
+                                                        received ICMP Echo Reply, ID:12394, Seq:5
+                                                              Handling: DATA-PACKET-SUCCESS-EVENT
+                                                        handling event: DATA-PACKET-SUCCESS-EVENT
+                                                                imsiStateMachine received result 
+procedure: USER-DATA-PACKET-GENERATION-PROCEDURE, status: PROC-PASS-EVENT, E2E latency [ms]: 3004
+                                               Procedure Result: PASS, imsi: imsi-208930100007560
+                                                                           imsiStateMachine ended
+
+Total Latency: 0 days 00:00:04.611000 (4.611 seconds)
+PDF saved: call_flow-imsi-208930100007560.pdf
+
+all Flow for IMSI 'imsi-208930100007620':
+                                                                                          message
+                                                   connected to gNodeB, Name:gnb1, IP:, Port:9487
+                                                                             SIM UE Init complete
+                                                        execute procedure  REGISTRATION-PROCEDURE
+                                               Waiting for procedure result from imsiStateMachine
+                                                                 handling event: PROC-START-EVENT
+                                                      Start new procedure  REGISTRATION-PROCEDURE
+                                                                initiating Registration Procedure
+                                                             Handling: REGISTRATION-REQUEST-EVENT
+                                                       handling event: REGISTRATION-REQUEST-EVENT
+                                                        next event: AUTHENTICATION-RESPONSE-EVENT
+                                                     handling event: AUTHENTICATION-REQUEST-EVENT
+                                                          Handling: AUTHENTICATION-RESPONSE-EVENT
+                                                                 Handling: DL-INFO-TRANSFER-EVENT
+                                                           handling event: DL-INFO-TRANSFER-EVENT
+                                                                        Received Message Type: 86
+                                                    handling event: AUTHENTICATION-RESPONSE-EVENT
+                                                     handling event: SECURITY-MODE-COMPLETE-EVENT
+                                                           Handling: SECURITY-MODE-COMPLETE-EVENT
+                                                      handling event: SECURITY-MODE-COMMAND-EVENT
+                                                                        Received Message Type: 93
+                                                                           cmac value: 0x683c617c
+                                                   calculate NAS MAC (algorithm: 2, DLCount: 0x0)
+                                                                 Handling: DL-INFO-TRANSFER-EVENT
+                                                           handling event: DL-INFO-TRANSFER-EVENT
+                                              NAS integrity key: 3d0b071293da724ab52f66c6ca4d2171
+                                                                        Received Message Type: 66
+                                                            Handling: REGISTRATION-COMPLETE-EVENT
+                                                        handling event: REGISTRATION-ACCEPT-EVENT
+                                                                           cmac value: 0x6c4f6439
+                                                           handling event: DL-INFO-TRANSFER-EVENT
+                                                   calculate NAS MAC (algorithm: 2, DLCount: 0x1)
+                                                                 Handling: DL-INFO-TRANSFER-EVENT
+                                              NAS integrity key: 3d0b071293da724ab52f66c6ca4d2171
+                                          handling event: PDU-SESSION-ESTABLISHMENT-REQUEST-EVENT
+                                                Handling: PDU-SESSION-ESTABLISHMENT-REQUEST-EVENT
+                                      initiating UE Requested PDU Session Establishment Procedure
+                                                                 handling event: PROC-START-EVENT
+                                               Waiting for procedure result from imsiStateMachine
+                                         Start new procedure  PDU-SESSION-ESTABLISHMENT-PROCEDURE
+                                               Procedure Result: PASS, imsi: imsi-208930100007620
+                procedure: REGISTRATION-PROCEDURE, status: PROC-PASS-EVENT, E2E latency [ms]: 121
+                                                                imsiStateMachine received result 
+                                                      handling event: REGISTRATION-COMPLETE-EVENT
+                                           execute procedure  PDU-SESSION-ESTABLISHMENT-PROCEDURE
+                                                 Handling: PDU-SESSION-ESTABLISHMENT-ACCEPT-EVENT
+                                                                         PDU Address: 172.250.0.2
+                                                                                      SSC Mode: 1
+                                                                           PDU Session Type: IPV4
+                                                                               PDU Session ID: 10
+                                                       adding new PDU Session for PDU Sess ID: 10
+                                               next event: PDU-SESSION-ESTABLISHMENT-ACCEPT-EVENT
+                                           handling event: PDU-SESSION-ESTABLISHMENT-ACCEPT-EVENT
+                                                                        Payload contaner type:{1}
+                                                                       Received Message Type: 104
+                                                                           cmac value: 0x1c63faba
+                                              NAS integrity key: 3d0b071293da724ab52f66c6ca4d2171
+                                                   calculate NAS MAC (algorithm: 2, DLCount: 0x2)
+                                                                 Handling: DL-INFO-TRANSFER-EVENT
+                                                           handling event: DL-INFO-TRANSFER-EVENT
+                                        Please wait, initiating uplink user data in 3 seconds ...
+                                                 initiating User Data Packet Generation Procedure
+                                       Start new procedure  USER-DATA-PACKET-GENERATION-PROCEDURE
+                                                                 handling event: PROC-START-EVENT
+                                               Waiting for procedure result from imsiStateMachine
+                                               Procedure Result: PASS, imsi: imsi-208930100007620
+                                         execute procedure  USER-DATA-PACKET-GENERATION-PROCEDURE
+   procedure: PDU-SESSION-ESTABLISHMENT-PROCEDURE, status: PROC-PASS-EVENT, E2E latency [ms]: 893
+                                                                imsiStateMachine received result 
+                                                 handling event: DATA-BEARER-SETUP-RESPONSE-EVENT
+                                                           fetching PDU Session for pduSessId: 10
+                                                        Handling: DATA-BEARER-SETUP-REQUEST-EVENT
+                                                  handling event: DATA-BEARER-SETUP-REQUEST-EVENT
+                                                                             Handling: INIT-EVENT
+                                               received QFI value in downlink user data packet: 1
+                                                   Handling: DATA-PACKET-GENERATION-REQUEST-EVENT
+                                                   Handling: DATA-PACKET-GENERATION-REQUEST-EVENT
+                                                        received ICMP Echo Reply, ID:12394, Seq:5
+                                               Procedure Result: PASS, imsi: imsi-208930100007620
+procedure: USER-DATA-PACKET-GENERATION-PROCEDURE, status: PROC-PASS-EVENT, E2E latency [ms]: 3003
+                                                                imsiStateMachine received result 
+                                                        handling event: DATA-PACKET-SUCCESS-EVENT
+                                                              Handling: DATA-PACKET-SUCCESS-EVENT
+                                               received QFI value in downlink user data packet: 1
+                                               received QFI value in downlink user data packet: 1
+                                               received QFI value in downlink user data packet: 1
+                                                        received ICMP Echo Reply, ID:12394, Seq:3
+                                               received QFI value in downlink user data packet: 1
+                                                        received ICMP Echo Reply, ID:12394, Seq:2
+                                                        received ICMP Echo Reply, ID:12394, Seq:1
+                                                        received ICMP Echo Reply, ID:12394, Seq:4
+                                                                  initiating AN Release Procedure
+                                                                 handling event: PROC-START-EVENT
+                                                        Start new procedure  AN-RELEASE-PROCEDURE
+                                                          execute procedure  AN-RELEASE-PROCEDURE
+                                               Waiting for procedure result from imsiStateMachine
+                                                 handling event: CONNECTION-RELEASE-REQUEST-EVENT
+                                                         imsiStateMachine no more proc to execute
+                                                                imsiStateMachine received result 
+                   procedure: AN-RELEASE-PROCEDURE, status: PROC-PASS-EVENT, E2E latency [ms]: 70
+                                               Procedure Result: PASS, imsi: imsi-208930100007620
+                                                       Handling: CONNECTION-RELEASE-REQUEST-EVENT
+                                                       Handling: CONNECTION-RELEASE-REQUEST-EVENT
+                                                                           imsiStateMachine ended
+
+Total Latency: 0 days 00:00:04.089000 (4.089 seconds)
+PDF saved: call_flow-imsi-208930100007620.pdf
+
+Call Flow for IMSI 'imsi-208930100007680':
+                                                                                          message
+                                                   connected to gNodeB, Name:gnb1, IP:, Port:9487
+                                                                             SIM UE Init complete
+                                                        execute procedure  REGISTRATION-PROCEDURE
+                                               Waiting for procedure result from imsiStateMachine
+                                                                 handling event: PROC-START-EVENT
+                                                      Start new procedure  REGISTRATION-PROCEDURE
+                                                                initiating Registration Procedure
+                                                             Handling: REGISTRATION-REQUEST-EVENT
+                                                       handling event: REGISTRATION-REQUEST-EVENT
+                                                    handling event: AUTHENTICATION-RESPONSE-EVENT
+                                                          Handling: AUTHENTICATION-RESPONSE-EVENT
+                                                        next event: AUTHENTICATION-RESPONSE-EVENT
+                                                           handling event: DL-INFO-TRANSFER-EVENT
+                                                                        Received Message Type: 86
+                                                                 Handling: DL-INFO-TRANSFER-EVENT
+                                                     handling event: AUTHENTICATION-REQUEST-EVENT
+                                                      handling event: SECURITY-MODE-COMMAND-EVENT
+                                                     handling event: SECURITY-MODE-COMPLETE-EVENT
+                                                           Handling: SECURITY-MODE-COMPLETE-EVENT
+                                                                        Received Message Type: 93
+                                                           handling event: DL-INFO-TRANSFER-EVENT
+                                              NAS integrity key: 5f8ed1ac19094b8c4d4acf3d54d0a2f6
+                                                   calculate NAS MAC (algorithm: 2, DLCount: 0x0)
+                                                                 Handling: DL-INFO-TRANSFER-EVENT
+                                                                           cmac value: 0xec4f4551
+                                               Procedure Result: PASS, imsi: imsi-208930100007680
+                                          handling event: PDU-SESSION-ESTABLISHMENT-REQUEST-EVENT
+                                                Handling: PDU-SESSION-ESTABLISHMENT-REQUEST-EVENT
+                                      initiating UE Requested PDU Session Establishment Procedure
+                                         Start new procedure  PDU-SESSION-ESTABLISHMENT-PROCEDURE
+                                                                 handling event: PROC-START-EVENT
+                                               Waiting for procedure result from imsiStateMachine
+                                           execute procedure  PDU-SESSION-ESTABLISHMENT-PROCEDURE
+                procedure: REGISTRATION-PROCEDURE, status: PROC-PASS-EVENT, E2E latency [ms]: 320
+                                                            Handling: REGISTRATION-COMPLETE-EVENT
+                                                      handling event: REGISTRATION-COMPLETE-EVENT
+                                                        handling event: REGISTRATION-ACCEPT-EVENT
+                                                                        Received Message Type: 66
+                                                                           cmac value: 0xf418eb00
+                                              NAS integrity key: 5f8ed1ac19094b8c4d4acf3d54d0a2f6
+                                                   calculate NAS MAC (algorithm: 2, DLCount: 0x1)
+                                                                 Handling: DL-INFO-TRANSFER-EVENT
+                                                           handling event: DL-INFO-TRANSFER-EVENT
+                                                                imsiStateMachine received result 
+                                                                         PDU Address: 172.250.0.3
+                                                                                      SSC Mode: 1
+                                                                           PDU Session Type: IPV4
+                                                                               PDU Session ID: 10
+                                                       adding new PDU Session for PDU Sess ID: 10
+                                                 Handling: PDU-SESSION-ESTABLISHMENT-ACCEPT-EVENT
+                                               next event: PDU-SESSION-ESTABLISHMENT-ACCEPT-EVENT
+                                                                        Payload contaner type:{1}
+                                                                       Received Message Type: 104
+                                                                           cmac value: 0xdfbf8297
+                                              NAS integrity key: 5f8ed1ac19094b8c4d4acf3d54d0a2f6
+                                                   calculate NAS MAC (algorithm: 2, DLCount: 0x2)
+                                                                 Handling: DL-INFO-TRANSFER-EVENT
+                                                           handling event: DL-INFO-TRANSFER-EVENT
+                                           handling event: PDU-SESSION-ESTABLISHMENT-ACCEPT-EVENT
+                                                                             Handling: INIT-EVENT
+                                        Please wait, initiating uplink user data in 3 seconds ...
+                                                 initiating User Data Packet Generation Procedure
+                                       Start new procedure  USER-DATA-PACKET-GENERATION-PROCEDURE
+                                                                 handling event: PROC-START-EVENT
+                                               Waiting for procedure result from imsiStateMachine
+                                         execute procedure  USER-DATA-PACKET-GENERATION-PROCEDURE
+                                                 handling event: DATA-BEARER-SETUP-RESPONSE-EVENT
+   procedure: PDU-SESSION-ESTABLISHMENT-PROCEDURE, status: PROC-PASS-EVENT, E2E latency [ms]: 905
+                                                                imsiStateMachine received result 
+                                               Procedure Result: PASS, imsi: imsi-208930100007680
+                                                           fetching PDU Session for pduSessId: 10
+                                                        Handling: DATA-BEARER-SETUP-REQUEST-EVENT
+                                                  handling event: DATA-BEARER-SETUP-REQUEST-EVENT
+                                                   Handling: DATA-PACKET-GENERATION-REQUEST-EVENT
+                                                        received ICMP Echo Reply, ID:12394, Seq:3
+                                               received QFI value in downlink user data packet: 1
+                                                        received ICMP Echo Reply, ID:12394, Seq:2
+                                               received QFI value in downlink user data packet: 1
+                                                        received ICMP Echo Reply, ID:12394, Seq:1
+                                               received QFI value in downlink user data packet: 1
+                                                   Handling: DATA-PACKET-GENERATION-REQUEST-EVENT
+                                                                  initiating AN Release Procedure
+                                                        Start new procedure  AN-RELEASE-PROCEDURE
+                                                                 handling event: PROC-START-EVENT
+                                               Waiting for procedure result from imsiStateMachine
+                                                          execute procedure  AN-RELEASE-PROCEDURE
+                                               Procedure Result: PASS, imsi: imsi-208930100007680
+procedure: USER-DATA-PACKET-GENERATION-PROCEDURE, status: PROC-PASS-EVENT, E2E latency [ms]: 3003
+                                                        received ICMP Echo Reply, ID:12394, Seq:5
+                                                        handling event: DATA-PACKET-SUCCESS-EVENT
+                                                              Handling: DATA-PACKET-SUCCESS-EVENT
+                                               received QFI value in downlink user data packet: 1
+                                                        received ICMP Echo Reply, ID:12394, Seq:4
+                                               received QFI value in downlink user data packet: 1
+                                                                imsiStateMachine received result 
+                                                                 handling event: PROC-START-EVENT
+                                                            handling event: SERVICE-REQUEST-EVENT
+                                                   connected to gNodeB, Name:gnb1, IP:, Port:9487
+                                                                  Handling: SERVICE-REQUEST-EVENT
+                                                initiating UE Triggered Service Request Procedure
+                                      Start new procedure  UE-TRIGGERED-SERVICE-REQUEST-PROCEDURE
+                                               Waiting for procedure result from imsiStateMachine
+                                                                imsiStateMachine received result 
+                                               Procedure Result: PASS, imsi: imsi-208930100007680
+                                                       Handling: CONNECTION-RELEASE-REQUEST-EVENT
+                   procedure: AN-RELEASE-PROCEDURE, status: PROC-PASS-EVENT, E2E latency [ms]: 69
+                                                       Handling: CONNECTION-RELEASE-REQUEST-EVENT
+                                                 handling event: CONNECTION-RELEASE-REQUEST-EVENT
+                                        execute procedure  UE-TRIGGERED-SERVICE-REQUEST-PROCEDURE
+                                                             handling event: SERVICE-ACCEPT-EVENT
+                                                                           cmac value: 0xb66151f5
+                                              NAS integrity key: 5f8ed1ac19094b8c4d4acf3d54d0a2f6
+                                                                        Received Message Type: 78
+                                                                 Handling: DL-INFO-TRANSFER-EVENT
+                                                           handling event: DL-INFO-TRANSFER-EVENT
+                                                   calculate NAS MAC (algorithm: 2, DLCount: 0x3)
+                                                         imsiStateMachine no more proc to execute
+                                                  handling event: DATA-BEARER-SETUP-REQUEST-EVENT
+                                                        Handling: DATA-BEARER-SETUP-REQUEST-EVENT
+                                                           fetching PDU Session for pduSessId: 10
+                                                 handling event: DATA-BEARER-SETUP-RESPONSE-EVENT
+                                                                imsiStateMachine received result 
+                                                                             Handling: INIT-EVENT
+procedure: UE-TRIGGERED-SERVICE-REQUEST-PROCEDURE, status: PROC-PASS-EVENT, E2E latency [ms]: 756
+                                               Procedure Result: PASS, imsi: imsi-208930100007680
+                                                                           imsiStateMachine ended
+
+Total Latency: 0 days 00:00:05.056000 (5.056 seconds)
+PDF saved: call_flow-imsi-208930100007680.pdf
+
+Call Flow for IMSI 'imsi-208930100007750':
+                                                                                          message
+                                                   connected to gNodeB, Name:gnb1, IP:, Port:9487
+                                                                             SIM UE Init complete
+                                                        execute procedure  REGISTRATION-PROCEDURE
+                                               Waiting for procedure result from imsiStateMachine
+                                                                 handling event: PROC-START-EVENT
+                                                      Start new procedure  REGISTRATION-PROCEDURE
+                                                                initiating Registration Procedure
+                                                             Handling: REGISTRATION-REQUEST-EVENT
+                                                       handling event: REGISTRATION-REQUEST-EVENT
+                                                    handling event: AUTHENTICATION-RESPONSE-EVENT
+                                                          Handling: AUTHENTICATION-RESPONSE-EVENT
+                                                     handling event: AUTHENTICATION-REQUEST-EVENT
+                                                        next event: AUTHENTICATION-RESPONSE-EVENT
+                                                                 Handling: DL-INFO-TRANSFER-EVENT
+                                                           handling event: DL-INFO-TRANSFER-EVENT
+                                                                        Received Message Type: 86
+                                                           handling event: DL-INFO-TRANSFER-EVENT
+                                                                 Handling: DL-INFO-TRANSFER-EVENT
+                                                   calculate NAS MAC (algorithm: 2, DLCount: 0x0)
+                                              NAS integrity key: 8863f83c6b722f01854ec6f2b30d8ed4
+                                                                           cmac value: 0x4bb799d7
+                                                                        Received Message Type: 93
+                                                      handling event: SECURITY-MODE-COMMAND-EVENT
+                                                           Handling: SECURITY-MODE-COMPLETE-EVENT
+                                                     handling event: SECURITY-MODE-COMPLETE-EVENT
+                                                                        Received Message Type: 66
+                                                        handling event: REGISTRATION-ACCEPT-EVENT
+                                                                           cmac value: 0xddca3c1d
+                                                           handling event: DL-INFO-TRANSFER-EVENT
+                                                   calculate NAS MAC (algorithm: 2, DLCount: 0x1)
+                                                                 Handling: DL-INFO-TRANSFER-EVENT
+                                              NAS integrity key: 8863f83c6b722f01854ec6f2b30d8ed4
+                                          handling event: PDU-SESSION-ESTABLISHMENT-REQUEST-EVENT
+                                                Handling: PDU-SESSION-ESTABLISHMENT-REQUEST-EVENT
+                                      initiating UE Requested PDU Session Establishment Procedure
+                                         Start new procedure  PDU-SESSION-ESTABLISHMENT-PROCEDURE
+                                               Waiting for procedure result from imsiStateMachine
+                                                                 handling event: PROC-START-EVENT
+                                               Procedure Result: PASS, imsi: imsi-208930100007750
+                procedure: REGISTRATION-PROCEDURE, status: PROC-PASS-EVENT, E2E latency [ms]: 322
+                                                                imsiStateMachine received result 
+                                                      handling event: REGISTRATION-COMPLETE-EVENT
+                                                            Handling: REGISTRATION-COMPLETE-EVENT
+                                           execute procedure  PDU-SESSION-ESTABLISHMENT-PROCEDURE
+                                               next event: PDU-SESSION-ESTABLISHMENT-ACCEPT-EVENT
+                                                                         PDU Address: 172.250.0.4
+                                                                                      SSC Mode: 1
+                                                                           PDU Session Type: IPV4
+                                                                               PDU Session ID: 10
+                                                       adding new PDU Session for PDU Sess ID: 10
+                                           handling event: PDU-SESSION-ESTABLISHMENT-ACCEPT-EVENT
+                                                 Handling: PDU-SESSION-ESTABLISHMENT-ACCEPT-EVENT
+                                                                       Received Message Type: 104
+                                                                        Payload contaner type:{1}
+                                                                           cmac value: 0x4d8c4e84
+                                              NAS integrity key: 8863f83c6b722f01854ec6f2b30d8ed4
+                                                   calculate NAS MAC (algorithm: 2, DLCount: 0x2)
+                                                                 Handling: DL-INFO-TRANSFER-EVENT
+                                                           handling event: DL-INFO-TRANSFER-EVENT
+                                                                             Handling: INIT-EVENT
+                                        Please wait, initiating uplink user data in 3 seconds ...
+                                                 initiating User Data Packet Generation Procedure
+                                       Start new procedure  USER-DATA-PACKET-GENERATION-PROCEDURE
+                                               Waiting for procedure result from imsiStateMachine
+                                         execute procedure  USER-DATA-PACKET-GENERATION-PROCEDURE
+                                                                 handling event: PROC-START-EVENT
+   procedure: PDU-SESSION-ESTABLISHMENT-PROCEDURE, status: PROC-PASS-EVENT, E2E latency [ms]: 895
+                                                                imsiStateMachine received result 
+                                                 handling event: DATA-BEARER-SETUP-RESPONSE-EVENT
+                                                           fetching PDU Session for pduSessId: 10
+                                                        Handling: DATA-BEARER-SETUP-REQUEST-EVENT
+                                                  handling event: DATA-BEARER-SETUP-REQUEST-EVENT
+                                               Procedure Result: PASS, imsi: imsi-208930100007750
+                                                   Handling: DATA-PACKET-GENERATION-REQUEST-EVENT
+                                                   Handling: DATA-PACKET-GENERATION-REQUEST-EVENT
+                                                                imsiStateMachine received result 
+procedure: USER-DATA-PACKET-GENERATION-PROCEDURE, status: PROC-PASS-EVENT, E2E latency [ms]: 3003
+                                               Procedure Result: PASS, imsi: imsi-208930100007750
+                                                 initiating UE Initiated Deregistration Procedure
+                                       Start new procedure  UE-INITIATED-DEREGISTRATION-PROCEDURE
+                                               Waiting for procedure result from imsiStateMachine
+                                                                 handling event: PROC-START-EVENT
+                                                        handling event: DATA-PACKET-SUCCESS-EVENT
+                                         execute procedure  UE-INITIATED-DEREGISTRATION-PROCEDURE
+                                                              Handling: DATA-PACKET-SUCCESS-EVENT
+                                               received QFI value in downlink user data packet: 1
+                                               received QFI value in downlink user data packet: 1
+                                                        received ICMP Echo Reply, ID:12394, Seq:4
+                                               received QFI value in downlink user data packet: 1
+                                                        received ICMP Echo Reply, ID:12394, Seq:3
+                                                        received ICMP Echo Reply, ID:12394, Seq:2
+                                               received QFI value in downlink user data packet: 1
+                                                        received ICMP Echo Reply, ID:12394, Seq:1
+                                               received QFI value in downlink user data packet: 1
+                                                        received ICMP Echo Reply, ID:12394, Seq:5
+                                             handling event: DEREGISTRATION-REQUEST-UE-ORIG-EVENT
+                                                   Handling: DEREGISTRATION-REQUEST-UE-ORIG-EVENT
+                                                           handling event: DL-INFO-TRANSFER-EVENT
+                                                                 Handling: DL-INFO-TRANSFER-EVENT
+                                                                        Received Message Type: 70
+                                              handling event: DEREGISTRATION-ACCEPT-UE-ORIG-EVENT
+                                                         imsiStateMachine no more proc to execute
+                                                 handling event: CONNECTION-RELEASE-REQUEST-EVENT
+                                                                imsiStateMachine received result 
+ procedure: UE-INITIATED-DEREGISTRATION-PROCEDURE, status: PROC-PASS-EVENT, E2E latency [ms]: 202
+                                               Procedure Result: PASS, imsi: imsi-208930100007750
+                                                                           imsiStateMachine ended
+
+Total Latency: 0 days 00:00:04.424000 (4.424 seconds)
+PDF saved: call_flow-imsi-208930100007750.pdf
+
+Call Flow for IMSI 'imsi-208930100007880':
+                                                                                             message
+                                                      connected to gNodeB, Name:gnb1, IP:, Port:9487
+                                                                                SIM UE Init complete
+                                                           execute procedure  REGISTRATION-PROCEDURE
+                                                  Waiting for procedure result from imsiStateMachine
+                                                                    handling event: PROC-START-EVENT
+                                                         Start new procedure  REGISTRATION-PROCEDURE
+                                                                   initiating Registration Procedure
+                                                                Handling: REGISTRATION-REQUEST-EVENT
+                                                          handling event: REGISTRATION-REQUEST-EVENT
+                                                       handling event: AUTHENTICATION-RESPONSE-EVENT
+                                                             Handling: AUTHENTICATION-RESPONSE-EVENT
+                                                           next event: AUTHENTICATION-RESPONSE-EVENT
+                                                              handling event: DL-INFO-TRANSFER-EVENT
+                                                                           Received Message Type: 86
+                                                                    Handling: DL-INFO-TRANSFER-EVENT
+                                                        handling event: AUTHENTICATION-REQUEST-EVENT
+                                                         handling event: SECURITY-MODE-COMMAND-EVENT
+                                                        handling event: SECURITY-MODE-COMPLETE-EVENT
+                                                              Handling: SECURITY-MODE-COMPLETE-EVENT
+                                                                           Received Message Type: 93
+                                                              handling event: DL-INFO-TRANSFER-EVENT
+                                                 NAS integrity key: daff6e6c2560f679bb4c984b8e552e28
+                                                      calculate NAS MAC (algorithm: 2, DLCount: 0x0)
+                                                                    Handling: DL-INFO-TRANSFER-EVENT
+                                                                              cmac value: 0x7ecda8ff
+                                                  Procedure Result: PASS, imsi: imsi-208930100007880
+                                             handling event: PDU-SESSION-ESTABLISHMENT-REQUEST-EVENT
+                                                   Handling: PDU-SESSION-ESTABLISHMENT-REQUEST-EVENT
+                                         initiating UE Requested PDU Session Establishment Procedure
+                                            Start new procedure  PDU-SESSION-ESTABLISHMENT-PROCEDURE
+                                                                    handling event: PROC-START-EVENT
+                                                  Waiting for procedure result from imsiStateMachine
+                                              execute procedure  PDU-SESSION-ESTABLISHMENT-PROCEDURE
+                   procedure: REGISTRATION-PROCEDURE, status: PROC-PASS-EVENT, E2E latency [ms]: 343
+                                                              handling event: DL-INFO-TRANSFER-EVENT
+                                                         handling event: REGISTRATION-COMPLETE-EVENT
+                                                               Handling: REGISTRATION-COMPLETE-EVENT
+                                                           handling event: REGISTRATION-ACCEPT-EVENT
+                                                                           Received Message Type: 66
+                                                                              cmac value: 0x7aa828f9
+                                                 NAS integrity key: daff6e6c2560f679bb4c984b8e552e28
+                                                      calculate NAS MAC (algorithm: 2, DLCount: 0x1)
+                                                                    Handling: DL-INFO-TRANSFER-EVENT
+                                                                   imsiStateMachine received result 
+                                                  next event: PDU-SESSION-ESTABLISHMENT-ACCEPT-EVENT
+                                                                                         SSC Mode: 1
+                                                                              PDU Session Type: IPV4
+                                                                                  PDU Session ID: 10
+                                                          adding new PDU Session for PDU Sess ID: 10
+                                                    Handling: PDU-SESSION-ESTABLISHMENT-ACCEPT-EVENT
+                                              handling event: PDU-SESSION-ESTABLISHMENT-ACCEPT-EVENT
+                                                                            PDU Address: 172.250.0.5
+                                                                          Received Message Type: 104
+                                                                              cmac value: 0xaadcbaa3
+                                                 NAS integrity key: daff6e6c2560f679bb4c984b8e552e28
+                                                      calculate NAS MAC (algorithm: 2, DLCount: 0x2)
+                                                                    Handling: DL-INFO-TRANSFER-EVENT
+                                                              handling event: DL-INFO-TRANSFER-EVENT
+                                                                           Payload contaner type:{1}
+                                           Please wait, initiating uplink user data in 3 seconds ...
+                                                    initiating User Data Packet Generation Procedure
+                                          Start new procedure  USER-DATA-PACKET-GENERATION-PROCEDURE
+                                                  Waiting for procedure result from imsiStateMachine
+                                            execute procedure  USER-DATA-PACKET-GENERATION-PROCEDURE
+                                                  Procedure Result: PASS, imsi: imsi-208930100007880
+                                                                    handling event: PROC-START-EVENT
+      procedure: PDU-SESSION-ESTABLISHMENT-PROCEDURE, status: PROC-PASS-EVENT, E2E latency [ms]: 884
+                                                                   imsiStateMachine received result 
+                                                    handling event: DATA-BEARER-SETUP-RESPONSE-EVENT
+                                                                                Handling: INIT-EVENT
+                                                              fetching PDU Session for pduSessId: 10
+                                                           Handling: DATA-BEARER-SETUP-REQUEST-EVENT
+                                                     handling event: DATA-BEARER-SETUP-REQUEST-EVENT
+                                                  received QFI value in downlink user data packet: 1
+                                                           received ICMP Echo Reply, ID:12394, Seq:1
+                                                      Handling: DATA-PACKET-GENERATION-REQUEST-EVENT
+                                                      Handling: DATA-PACKET-GENERATION-REQUEST-EVENT
+   procedure: USER-DATA-PACKET-GENERATION-PROCEDURE, status: PROC-PASS-EVENT, E2E latency [ms]: 3003
+                                                         Handling: PDU-SESSION-RELEASE-REQUEST-EVENT
+                                               initiating UE Requested PDU Session Release Procedure
+                                     Start new procedure  UE-REQUESTED-PDU-SESSION-RELEASE-PROCEDURE
+                                                                    handling event: PROC-START-EVENT
+                                                  Waiting for procedure result from imsiStateMachine
+                                       execute procedure  UE-REQUESTED-PDU-SESSION-RELEASE-PROCEDURE
+                                                  Procedure Result: PASS, imsi: imsi-208930100007880
+                                                   handling event: PDU-SESSION-RELEASE-REQUEST-EVENT
+                                                                   imsiStateMachine received result 
+                                                           received ICMP Echo Reply, ID:12394, Seq:5
+                                                                 Handling: DATA-PACKET-SUCCESS-EVENT
+                                                  received QFI value in downlink user data packet: 1
+                                                           received ICMP Echo Reply, ID:12394, Seq:4
+                                                  received QFI value in downlink user data packet: 1
+                                                           received ICMP Echo Reply, ID:12394, Seq:3
+                                                  received QFI value in downlink user data packet: 1
+                                                           received ICMP Echo Reply, ID:12394, Seq:2
+                                                  received QFI value in downlink user data packet: 1
+                                                           handling event: DATA-PACKET-SUCCESS-EVENT
+                                                              fetching PDU Session for pduSessId: 10
+                                                     PDU Session Release Command, PDU Session ID: 10
+                                                        Handling: PDU-SESSION-RELEASE-COMPLETE-EVENT
+                                                      next event: PDU-SESSION-RELEASE-COMPLETE-EVENT
+                                                   handling event: PDU-SESSION-RELEASE-COMMAND-EVENT
+                                                                           Payload contaner type:{1}
+                                                                          Received Message Type: 104
+                                                 NAS integrity key: daff6e6c2560f679bb4c984b8e552e28
+                                                      calculate NAS MAC (algorithm: 2, DLCount: 0x3)
+                                                                    Handling: DL-INFO-TRANSFER-EVENT
+                                                              handling event: DL-INFO-TRANSFER-EVENT
+                                                                              cmac value: 0x42a1ee5e
+                                                            imsiStateMachine no more proc to execute
+                                                  handling event: PDU-SESSION-RELEASE-COMPLETE-EVENT
+                                                                                Handling: QUIT-EVENT
+                                                                              Pdu Session terminated
+                                                   handling event: DATA-BEARER-RELEASE-REQUEST-EVENT
+                                                                   imsiStateMachine received result 
+procedure: UE-REQUESTED-PDU-SESSION-RELEASE-PROCEDURE, status: PROC-PASS-EVENT, E2E latency [ms]: 60
+                                                  Procedure Result: PASS, imsi: imsi-208930100007880
+                                                                              imsiStateMachine ended
+
+Total Latency: 0 days 00:00:04.292000 (4.292 seconds)
+PDF saved: call_flow-imsi-208930100007880.pdf
