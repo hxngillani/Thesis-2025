@@ -1,0 +1,85 @@
+\chapter{Conclusion and Future Work}
+\label{ch:conclusion_futurework}
+\section{Summary of Contributions}
+This thesis has demonstrated the feasibility of deploying Aether, an open-source private
+5G platform, in a virtualized environment. Two main deployment scenarios were pre-
+sented:
+
+\begin{itemize}
+    \item \textbf{Single-VM (Quick Start) Deployment:} Provided a streamlined, 
+    resource-efficient setup suitable for initial testing and validation of core 5G functionalities.
+    \item \textbf{Full Aether Deployment (Lab PC):} Showcased an expanded architec-
+    ture capable of supporting advanced 5G features, dynamic policy enforcement, 
+    and traffic steering through multiple UPFs.
+\end{itemize}
+
+Through systematic testing with both \texttt{gNBsim} and \texttt{UERANSIM}, this 
+work validated critical procedures such as UE registration, PDU session establishment, 
+and QoS management. In addition, it highlighted how runtime configuration tools (e.g., 
+Aether ROC) can enable on-the-fly adjustments to network parameters, facilitating more 
+flexible and scalable private 5G deployments. 
+
+The approaches and results in this thesis contribute to both the academic and industrial communities by demonstrating a clear roadmap for deploying and evaluating private 5G solutions in virtualized testbeds. Moreover, the documented challenges and proposed enhancements—particularly regarding UPF routing and monitoring—were contributed back to the Aether project, reinforcing the collaborative nature of open-source infrastructure development. 
+Specifically, two code contributions were made to the Aether project:
+
+\begin{enumerate}
+    \item \textbf{Dynamic UPF NAT and Routing Configuration}: Implemented using templated \texttt{Jinja2} files to automate the generation of interface-specific configuration, allowing flexible and scalable deployment of multiple UPFs.
+    
+    \item \textbf{Enhanced Prometheus Metric Collection}: Modified the UPF to directly export UE IP addresses to Prometheus, eliminating the dependency on the SMF monitoring service for IP resolution.
+\end{enumerate}
+
+These enhancements were submitted to the Aether community for ongoing development and integration.
+
+
+
+\section{Limitations}
+\paragraph{Trade-Offs Between Simplicity and Feature-Rich Architectures}
+While the single-VM deployment offers a straightforward, resource-friendly approach for 
+early testing and basic functional validation, it is inherently constrained in terms of 
+scalability and performance under heavier loads. In contrast, the Full Aether Deployment 
+demonstrates support for more advanced 5G features, including dynamic policy 
+enforcement and multi-UPF traffic steering, but entails higher complexity in setup and 
+maintenance. Thus, choosing between these approaches depends heavily on the specific 
+use case: rapid prototyping and proof-of-concept deployments favor simplicity, whereas 
+production-level or high-concurrency environments demand more complex and 
+resource-intensive architectures.
+
+\section{Future Work}
+\paragraph{Overall Reflections and Recommendations}
+\begin{itemize}
+    \item \textbf{Scaling the SD-Core:} 
+    For production-level or high-concurrency scenarios, a distributed architecture 
+    spanning multiple physical hosts may be required. Future experiments could 
+    investigate horizontal scaling of SD-Core components (e.g., AMF, SMF, UPF) 
+    and assess its impact on throughput, latency, and failover mechanisms.
+
+    \item \textbf{Extended Performance Analysis:}
+    Additional work can focus on deeper performance metrics, such as jitter, packet 
+    loss, and end-to-end delay under higher UE counts (e.g., 500 or 1,000). 
+    Incorporating metrics at multiple points (UE, gNodeB, UPF, external gateway) 
+    would yield a more comprehensive performance profile.
+
+    \item \textbf{Advanced 5G Features:}
+    Investigations into network slicing, edge computing integration, or closed-loop 
+    orchestration (e.g., using AI/ML-based traffic prediction) could significantly 
+    enhance the realism and utility of future testbeds. These features would align the 
+    virtualized Aether deployment with emerging enterprise 5G use cases.
+
+    \item \textbf{Security and Isolation Testing:}
+    Another avenue is evaluating the security implications of multi-tenant 
+    environments. This includes testing user isolation across slices, robustness against 
+    DDoS attacks, and verifying data confidentiality through techniques like IPsec 
+    offloading or mutual TLS.
+
+    \item \textbf{Production-Ready Integrations:}
+    Collaborations with industrial partners, testing real small cells (instead of 
+    simulated ones), and integrating enterprise applications (like IoT data 
+    collection or AR/VR services) could validate the platform’s readiness for 
+    real-world deployment.
+
+\end{itemize}
+
+Collectively, these directions offer numerous pathways to refine and expand the findings 
+of this thesis. By advancing the experimentation scope, scaling core components, and 
+integrating more complex features, future work can further confirm Aether’s suitability 
+for diverse enterprise 5G scenarios.

@@ -1,0 +1,47 @@
+\chapter*{Glossary of Terms}
+\renewcommand{\arraystretch}{1.4}
+
+\begin{longtable}{>{\bfseries}p{0.2\textwidth} p{0.7\textwidth}}
+\toprule
+\textbf{Term} & \textbf{Definition} \\
+\midrule
+\endfirsthead
+
+\toprule
+\textbf{Term} & \textbf{Definition} \\
+\midrule
+\endhead
+
+\bottomrule
+\endfoot
+
+5G & The fifth generation of wireless communication technologies, offering ultra-low latency, high throughput, and support for massive IoT deployments. \\
+Private 5G & A standalone 5G network deployed by an organization for internal use, ensuring greater security, control, and customization. \\
+Aether & An open-source platform by the Open Networking Foundation (ONF) for managing private 5G networks using cloud-native and modular components. \\
+Blueprint & A reusable configuration package in Aether, defined using Ansible and Helm, that describes the deployment of network components. \\
+SD-Core & Aether’s cloud-native core network supporting 4G/5G functions like AMF, SMF, UPF, and UDM with microservices and APIs. \\
+SD-RAN & Software-defined RAN aligned with O-RAN split 7.2x, including components like nRT-RIC, xApps, and simulated CU/DU nodes. \\
+AMP & Aether Management Plane providing runtime control and monitoring through ROC and observability tools. \\
+ROC & Runtime Operational Control subsystem enabling dynamic configuration of policies, slices, and devices using APIs and GUI. \\
+OnRamp & Aether’s deployment tool that uses Ansible and Helm to configure all components in VM or cloud setups. \\
+Container & A lightweight virtualized environment for packaging apps with dependencies, used for microservice deployment. \\
+VM & A software-based emulation of a computer that hosts containerized services on general-purpose infrastructure. \\
+NFV & Network Function Virtualization—virtualizing network services that were traditionally run on hardware appliances. \\
+SDN & Software-Defined Networking—separates the network control plane from the data plane for programmability. \\
+Kubernetes & A container orchestration system used to deploy and manage Aether microservices. \\
+Helm & A Kubernetes package manager used in Aether for deploying containerized applications via Helm charts. \\
+Ansible & An automation tool that defines infrastructure as code for setting up Aether environments. \\
+gNB & The 5G base station that manages radio communications between UE and the core network. \\
+gNBsim & A simulator that emulates gNB and UE behavior for testing Aether SD-Core functionality. \\
+UERANSIM & A tool to simulate User Equipment and RAN for testing 5G Core deployments. \\
+CU/DU & Centralized and Distributed Units that split base station functions between edge and cloud. \\
+nRT-RIC & Near-Real-Time RAN Intelligent Controller hosting xApps to optimize radio network performance. \\
+xApps & Modular control applications running on nRT-RIC to manage RAN policies and behaviors. \\
+Prometheus & Monitoring system used to collect metrics from Aether services. \\
+Grafana & Visualization tool used with Prometheus to create real-time dashboards. \\
+Rancher & Kubernetes management tool used for container lifecycle and cluster operations. \\
+CI/CD & Continuous Integration/Deployment—automated workflows for testing and deploying applications. \\
+Edge Cloud & A computing environment near data sources (e.g., factories or campuses) for low-latency processing. \\
+Local Breakout & A deployment model where traffic is routed locally to reduce latency, rather than via centralized data centers. \\
+
+\end{longtable}

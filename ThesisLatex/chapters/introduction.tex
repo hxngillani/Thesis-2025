@@ -1,0 +1,74 @@
+\chapter{Introduction}
+\label{ch:introduction}
+
+The rapid advancement of 5G technology is transforming industries by enabling ultra-reliable, low-latency, and high-bandwidth communication. While public 5G networks are widely deployed, enterprises increasingly seek private 5G solutions for enhanced security, reliability, and customization. However, deploying such solutions in virtualized environments presents technical challenges, requiring robust evaluation and optimization. This thesis explores the deployment and testing of Aether, an open-source private 5G solution, within a virtualized testbed.Aether is one of the previous ONF projects that has now been migrated to the Linux Foundation (LF), where it remains active and in the development phase. The ONF has now become part of the Linux Foundation, signifying a transition in governance and continued backing for projects like Aether.
+
+\section{Motivation}
+
+Private 5G networks provide enterprises with dedicated connectivity, offering improved security, low-latency communication, and network customization. Unlike traditional Wi-Fi or public 5G, private 5G enables:
+
+\begin{itemize}
+    \item \textbf{Secure and isolated network environments:} Ensuring that sensitive data remains within the organization's control.
+    \item \textbf{Higher Quality of Service (QoS) for critical applications:} Allowing prioritization of mission-critical operations.
+    \item \textbf{Greater control over network policies and resource allocation:} Facilitating tailored network configurations to meet specific business needs.
+\end{itemize}
+\clearpage
+However, deploying private 5G solutions in virtualized infrastructure poses unique challenges, such as:
+
+\begin{itemize}
+    \item \textbf{Performance overhead introduced by virtualization:} Virtualization can lead to increased latency and reduced throughput.
+    \item \textbf{Complex network configuration and integration:} Integrating 5G network functions within a virtualized environment requires careful planning and execution.
+    \item \textbf{Ensuring scalability while maintaining reliability:} As the network scales, maintaining consistent performance and reliability becomes challenging.
+\end{itemize}
+
+This study aims to explore these challenges by evaluating Aether, an enterprise-focused open-source private 5G solution.
+
+\section{Problem Statement}
+
+This research evaluates the feasibility and performance of deploying Aether—a modular, open-source private 5G platform—in a Virtual Machine (VM)-based testbed. The study focuses on identifying deployment challenges, assessing network performance, and proposing optimizations to support Vm based implementations. Virtual machines (VMs) provide flexibility and scalability, but they also introduce complexities such as:
+
+\begin{itemize}
+    \item \textbf{Performance bottlenecks due to virtualization overhead:} The additional layer of abstraction can impact network performance.
+    \item \textbf{Difficulty in configuring 5G network functions in a multi-tenant environment:} Ensuring isolation and optimal performance for multiple tenants is challenging.
+    \item \textbf{Challenges in integrating software-defined networking (SDN) with private 5G:} Harmonizing SDN principles with 5G architecture requires careful consideration.
+\end{itemize}
+
+This research evaluates the feasibility and performance of deploying Aether, an open-source private 5G platform, in a VM-based testbed. The study aims to identify key deployment challenges, assess network performance, and propose optimizations for enterprise-scale implementations.
+\clearpage
+\section{Objectives}
+
+The primary objectives of this study are:
+
+\begin{itemize}
+    \item \textbf{Deploy Aether on a VM-Based Infrastructure:} Set up a controlled testbed to evaluate Aether’s deployment in a virtualized environment, including essential components like SD Core, Aether Run time Operation Control and Aether Monitor.
+    \item \textbf{Test Core Functionalities and Performance Metrics:} Validate key 5G functionalities such as UE registration, PDU session establishment, bandwidth, and QoS using tools like UERANSIM and gNBSim.
+    \item \textbf{Identify Challenges and Propose Solutions:} Investigate deployment bottlenecks (e.g., network configurations, VM setups) and suggest optimizations to improve scalability and reliability.
+    \item \textbf{Support Teaching Activities:} Integrate the deployment process into educational activities, providing students with hands-on experience in configuring and troubleshooting private 5G networks.
+\end{itemize}
+
+These objectives aim to demonstrate the feasibility of deploying private 5G solutions in virtualized environments while contributing to both academic research and practical education.
+
+\section{Scope of the Study}
+
+This study focuses on the deployment and testing of Aether within a virtualized environment. The scope includes:
+
+\begin{itemize}
+    \item \textbf{Setting up a VM-based testbed:} Utilizing virtualization technologies to emulate a realistic enterprise network environment, ensuring scalability and reproducibility for private 5G deployments.
+    \item \textbf{Implementing Aether’s core components:} Deploying essential network functions, including the Software-Defined Core Network (SD-Core), Aether Runtime Operational Control (ROC), and Aether Monitor, to facilitate comprehensive network management and monitoring.
+    \item \textbf{Evaluating network performance:} Conducting careful testing to measure key performance indicators such as latency, throughput, packet loss, and system reliability under different workload conditions.
+    \item \textbf{Addressing Deployment Challenges and Contributing to Platform Enhancements:} Identifying and resolving various issues encountered during deployment on virtual machines, implementing optimizations, and contributing valuable solutions to the Aether platform’s codebase to improve its stability and functionality.
+\end{itemize}
+
+\section{Thesis Organization}
+
+After this introduction chapter, the thesis is organized as follows:
+
+\begin{itemize}
+    \item \textbf{Chapter 2} provides an overview of private 5G networks, including virtualization, SDN, and the Aether platform.
+    \item \textbf{Chapter 3} describes the methodology used to deploy Aether in a VM-based testbed and the testing framework adopted.
+    \item \textbf{Chapter 4} details the implementation process, covering VM configurations, network setup, and 5G function deployment.
+    \item \textbf{Chapter 5} presents the experimental results and discusses key findings, performance analysis, and observed challenges.
+    \item \textbf{Chapter 6} concludes the study by summarizing contributions, limitations, and future directions for private 5G in virtualized environments.
+\end{itemize}
+
+All network architecture diagrams used throughout this thesis are available in both PDF and editable \texttt{.drawio} formats for reuse and adaptation. A complete list of downloadable resources is provided in Appendix~\ref{sec:appendix-network-diagrams}.

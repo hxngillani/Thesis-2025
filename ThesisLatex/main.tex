@@ -1,0 +1,168 @@
+\documentclass[12pt,a4paper]{report}
+
+% === Packages for Formatting ===
+\usepackage{graphicx}   % For figures
+\usepackage{hyperref}   % For hyperlinks
+\usepackage{amsmath}    % For mathematical equations
+\usepackage{amssymb}    % For mathematical symbols
+\usepackage{listings}   % For code listings
+\usepackage{geometry}   % Adjust margins
+\usepackage{fancyhdr}   % For headers and footers
+\usepackage{titlesec}   % For section title formatting
+\usepackage{setspace}   % Line spacing
+\usepackage{caption}    % Custom figure captions
+\usepackage{emptypage}  % Remove page numbers on empty pages
+\usepackage{etoolbox}   % Custom TOC spacing
+\usepackage{lmodern}    % Use Latin Modern font (compatible with pdfLaTeX)
+\usepackage[T1]{fontenc}% Improve font encoding
+\usepackage{booktabs}   % Better table formatting
+\usepackage{import}     % For structured document imports
+\usepackage[titles]{tocloft} % Improved TOC formatting
+\usepackage{tabularx}   % Flexible column widths in tables
+\usepackage{afterpage}  % Allows control over page breaking
+\usepackage{placeins}   % Prevent tables from floating to other sections
+\usepackage{float}
+\usepackage{xcolor}     % If you want color for keywords
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{color, xcolor}
+\usepackage[nopatch=footnote]{microtype}
+% Define a "yaml" language for listings
+\lstdefinelanguage{yaml}{
+  keywords={true,false,null,y,n},
+  keywordstyle=\bfseries\color{blue},
+  basicstyle=\ttfamily,
+  sensitive=false,
+  comment=[l]{\#},
+  morecomment=[s]{/*}{*/},
+  moredelim=**[il][\color{gray}]{---},
+  moredelim=**[il][\color{gray}]{...},
+}
+
+\lstset{
+  % Global config for all listings
+  basicstyle=\small\ttfamily,
+  columns=fullflexible,
+  breaklines=true,
+  captionpos=b
+}
+
+\renewcommand{\arraystretch}{1.3} % Improves vertical spacing inside tables
+
+% === Adjusted Margins ===
+\geometry{top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm} % Balanced margins
+
+% === Page Formatting ===
+\pagestyle{fancy}
+\fancyhf{} % Clear header and footer
+\lhead{\nouppercase{\rightmark}} % Left header: section title
+\rhead{\thepage} % Right header: page number
+\fancyfoot[C]{\small University of Pisa • Thesis Report} % Centered footer text
+
+\setlength{\headheight}{21.5pt}
+\addtolength{\topmargin}{-7pt}
+
+% === Section Formatting ===
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries}{\chaptername{} \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{50pt}{40pt}
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{\Large}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{\large}
+
+% === Spacing Adjustments ===
+\onehalfspacing % Set line spacing to 1.5
+\setlength{\parindent}{1.5em} % Adjust paragraph indentation
+\setlength{\parskip}{0.5em}   % Adjust paragraph spacing
+
+% === Table of Contents Formatting ===
+\renewcommand{\contentsname}{\Huge \textbf{Table of Contents}} % Bigger title
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftsecdotsep}} % Dotted lines in TOC
+\setlength{\cftbeforechapskip}{1em} % Space before chapters
+\renewcommand{\cftchapfont}{\bfseries} % Bold chapter titles in TOC
+
+% === Figure and Table Formatting ===
+\captionsetup{format=hang, font=small, labelfont=bf}
+
+% === Extra Settings for Overfull Lines ===
+\emergencystretch=3em   % 1) Give LaTeX more flexibility for line-breaking
+\hfuzz=0.5pt            % 2) Tolerate up to 0.5pt overflow before warning
+\sloppy                  % 3) Loosen text justification (optional)
+
+% The microtype package helps with subtle kerning and hyphenation
+% so overfull boxes may be reduced further.
+
+\graphicspath{{images/}} % Folder for images
+
+\begin{document}
+
+% === Front Matter ===
+\pagenumbering{gobble} % Suppress page number for title page
+
+% Title Page
+\import{chapters/}{frontpage.tex}
+
+% Switch to Roman numerals (i, ii, iii) for TOC & Abstract
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+% Abstract
+\import{chapters/}{abstract.tex}
+
+% Acknowledgments
+\IfFileExists{chapters/acknowledgments.tex}{
+  \import{chapters/}{acknowledgments.tex}
+}{}
+
+% Table of Contents, List of Figures, and Tables
+\tableofcontents
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{List of Tables}
+\listoftables
+
+% Glossary of Terms
+\cleardoublepage
+\phantomsection
+\import{chapters/}{glossary.tex}
+
+% Switch to Arabic numbers (1, 2, 3) for the main content
+\cleardoublepage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% === Chapters ===
+\import{chapters/}{introduction.tex}
+\import{chapters/}{literature_review.tex}
+\import{chapters/}{methodology.tex}
+\import{chapters/}{implementation_testing.tex}
+\import{chapters/}{results_discussion.tex}
+\import{chapters/}{conclusion_futurework.tex}
+
+% === References ===
+\clearpage
+\phantomsection
+\renewcommand{\bibname}{References} % Standardize title
+\bibliographystyle{IEEEtran}
+\bibliography{references/references}
+
+% === Appendices ===
+\appendix
+\IfFileExists{appendices/configurations.tex}{
+  \import{appendices/}{configurations.tex}
+}{}
+
+\IfFileExists{appendices/logs.tex}{
+  \import{appendices/}{logs.tex}
+}{}
+
+\IfFileExists{appendices/diagrams.tex}{
+  \import{appendices/}{diagrams.tex}
+}{}
+
+\end{document}

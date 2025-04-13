@@ -1,0 +1,98 @@
+\chapter{Flows and Logs Analysis}
+\section{Complete 5G Call Flows and Logs}
+\label{sec:appendix-call-flows}
+
+This section provides access to the 5G call-flow diagrams and raw logs generated
+during the multi-UPF deployment tests. Each call-flow PDF corresponds to a specific
+\texttt{IMSI} and includes detailed message exchanges (registration, PDU session 
+establishment, release procedures, etc.). Additionally, an optional raw log file 
+(\texttt{e2eCallflows.log}) contains a plain-text record of all signaling steps.
+
+\begin{table}[H]
+\centering
+\caption{Call Flow Files with IMSI References}
+\begin{tabular}{ll}
+\toprule
+\textbf{IMSI} & \textbf{Call Flow PDF Link} \\
+\midrule
+208930100007500 & \href{https://github.com/hxngillani/Thesis-2025/blob/d0960d3a9d816eca167b428b2a6cfdfa707a49eb/Logs%26CallFlows%20Analysis/call_flow-imsi-208930100007500.pdf}{\texttt{View PDF}} \\
+208930100007560 & \href{https://github.com/hxngillani/Thesis-2025/blob/d0960d3a9d816eca167b428b2a6cfdfa707a49eb/Logs%26CallFlows%20Analysis/call_flow-imsi-208930100007560.pdf}{\texttt{View PDF}} \\
+208930100007620 & \href{https://github.com/hxngillani/Thesis-2025/blob/d0960d3a9d816eca167b428b2a6cfdfa707a49eb/Logs%26CallFlows%20Analysis/call_flow-imsi-208930100007620.pdf}{\texttt{View PDF}} \\
+208930100007680 & \href{https://github.com/hxngillani/Thesis-2025/blob/d0960d3a9d816eca167b428b2a6cfdfa707a49eb/Logs%26CallFlows%20Analysis/call_flow-imsi-208930100007680.pdf}{\texttt{View PDF}} \\
+208930100007750 & \href{https://github.com/hxngillani/Thesis-2025/blob/d0960d3a9d816eca167b428b2a6cfdfa707a49eb/Logs%26CallFlows%20Analysis/call_flow-imsi-208930100007750.pdf}{\texttt{View PDF}} \\
+208930100007880 & \href{https://github.com/hxngillani/Thesis-2025/blob/d0960d3a9d816eca167b428b2a6cfdfa707a49eb/Logs%26CallFlows%20Analysis/call_flow-imsi-208930100007880.pdf}{\texttt{View PDF}} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\noindent
+\textbf{Raw Log File (Optional).}  
+\label{logs:e2eCallflows}
+The plain-text log file listed below contains complete end-to-end call flows including 
+NAS messages, authentication steps, security mode commands, and success indicators 
+for each procedure:
+
+\begin{itemize}
+  \item \href{https://github.com/hxngillani/Thesis-2025/blob/d0960d3a9d816eca167b428b2a6cfdfa707a49eb/Logs%26CallFlows%20Analysis/e2eCallflows.log}{\texttt{e2eCallflows.log}}
+\end{itemize}
+
+\noindent
+These files capture the step-by-step message exchanges observed in the multi-UPF 
+deployment. For details on how these logs were parsed and analyzed programmatically,
+see Section~\ref{sec:analysis-scripts}.
+
+\section{Analysis Scripts and Code Repositories}
+\label{sec:analysis-scripts}
+
+This section provides links to the Python/Jupyter notebooks used for automated logs 
+analysis and call-flow interpretation. The notebooks are publicly accessible on GitHub 
+for transparency and reproducibility.
+
+\subsection{Logs Analysis}
+The first notebook parses and analyzes 5G logs from both the Quick Start and Full 
+Aether deployments, extracting key metrics (e.g., procedure latencies, success/failure 
+counts) to produce summary statistics:
+
+\begin{itemize}
+    \item \textbf{GitHub Link:}
+    \href{https://github.com/hxngillani/Thesis-2025/blob/d0960d3a9d816eca167b428b2a6cfdfa707a49eb/Logs%26CallFlows%20Analysis/LogsAnalysis.ipynb}{\texttt{LogsAnalysis.ipynb (GitHub)}}
+\end{itemize}
+
+\noindent
+Readers may either view it directly on GitHub or clone the repository to open it locally 
+in Jupyter or a compatible environment.
+
+\subsection{Call Flow Analysis}
+A second notebook specifically focuses on visualizing call-flow sequences, including 
+registration, PDU session establishment, service requests, and deregistrations. It reads
+the detailed logs to highlight message sequences and timings:
+
+\begin{itemize}
+    \item \textbf{GitHub Link:}
+    \href{https://github.com/hxngillani/Thesis-2025/blob/d0960d3a9d816eca167b428b2a6cfdfa707a49eb/Logs%26CallFlows%20Analysis/CallFlowsAnalysis.ipynb}{\texttt{CallFlowsAnalysis.ipynb (GitHub)}} 
+\end{itemize}
+
+\noindent
+This notebook also generates message-sequence charts to illustrate how different UEs 
+progress through various 5G procedures.
+
+\paragraph{How to Use the Notebooks}
+\begin{enumerate}
+    \item \textbf{Clone the Repository:}
+    \texttt{git clone https://github.com/hxngillani/Thesis-2025.git}
+    \item \textbf{Install Dependencies:}
+    Ensure you have Python 3 and Jupyter installed. Then install any additional
+    libraries (e.g., \texttt{pandas}, \texttt{numpy}, \texttt{matplotlib}) using:
+\begin{verbatim}
+pip install -r requirements.txt
+\end{verbatim}
+
+    \item \textbf{Run Jupyter:}
+    In the project directory, run \texttt{jupyter notebook} (or \texttt{jupyter lab})
+    and open either \texttt{LogsAnalysis.ipynb} or \texttt{CallFlowsAnalysis.ipynb}.
+\end{enumerate}
+
+\noindent
+These notebooks provide a reproducible way to examine the data collected from the
+Aether deployments, confirm key metrics, and visualize the message flows. This approach
+supports transparent testing, validation, and potential extensions for future research.
